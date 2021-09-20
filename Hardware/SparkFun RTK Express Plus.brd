@@ -7,11 +7,11 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.1" altunitdist="mm" altunit="mm"/>
+<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.005" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top/Horz" color="4" fill="1" visible="yes" active="yes"/>
-<layer number="2" name="GND/Horz" color="1" fill="3" visible="yes" active="yes"/>
-<layer number="15" name="Vert" color="4" fill="6" visible="yes" active="yes"/>
+<layer number="2" name="GND/Horz" color="1" fill="3" visible="no" active="yes"/>
+<layer number="15" name="Vert" color="4" fill="6" visible="no" active="yes"/>
 <layer number="16" name="Bottom/Vert" color="1" fill="1" visible="yes" active="yes"/>
 <layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
@@ -12075,15 +12075,18 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <clearance class="3" value="0.2032"/>
 </class>
 </classes>
-<designrules name="SparkFun-4-layer-TIGHT *">
-<description language="en">&lt;b&gt;EAGLE Design Rules&lt;/b&gt;
+<designrules name="SparkFun-4-Layer-General-JLCPCB">
+<description language="en">&lt;b&gt;4 Layer General Rules for JLCPCB&lt;/b&gt;
 &lt;p&gt;
-The default Design Rules have been set to cover
-a wide range of applications. Your particular design
-may have different requirements, so please make the
-necessary adjustments and save your customized
-design rules under a new name.</description>
-<param name="layerSetup" value="(1*2*15*16)"/>
+These are the free and generally easy to produce 4-layer PCB design rules. You can certainly go smaller but if the design doesn't call for it, these rules provide good guidance.
+&lt;ul&gt;
+&lt;li&gt;4 Layer&lt;/li&gt;
+&lt;li&gt;7mil Trace/Space&lt;/li&gt;
+&lt;li&gt;7mil Annular Rings&lt;/li&gt;
+&lt;li&gt;12mil Vias&lt;/li&gt;
+&lt;li&gt;3mil Stop Mask&lt;/li&gt;
+&lt;/ul&gt;</description>
+<param name="layerSetup" value="(1+2*15+16)"/>
 <param name="mtCopper" value="0.035559375mm 0.035559375mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035559375mm 0.035559375mm"/>
 <param name="mtIsolate" value="0.47751875mm 0.47751875mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.47751875mm"/>
 <param name="mdWireWire" value="7mil"/>
@@ -12132,14 +12135,14 @@ design rules under a new name.</description>
 <param name="psElongationOffset" value="100"/>
 <param name="mvStopFrame" value="1"/>
 <param name="mvCreamFrame" value="0"/>
-<param name="mlMinStopFrame" value="4mil"/>
-<param name="mlMaxStopFrame" value="4mil"/>
+<param name="mlMinStopFrame" value="3mil"/>
+<param name="mlMaxStopFrame" value="3mil"/>
 <param name="mlMinCreamFrame" value="0mil"/>
 <param name="mlMaxCreamFrame" value="0mil"/>
 <param name="mlViaStopLimit" value="25mil"/>
 <param name="srRoundness" value="0"/>
-<param name="srMinRoundness" value="0mil"/>
-<param name="srMaxRoundness" value="0mil"/>
+<param name="srMinRoundness" value="2mil"/>
+<param name="srMaxRoundness" value="2mil"/>
 <param name="slThermalIsolate" value="10mil"/>
 <param name="slThermalsForVias" value="0"/>
 <param name="dpMaxLengthDifference" value="10mm"/>
@@ -14938,43 +14941,15 @@ design rules under a new name.</description>
 <mfgpreviewcolor name="substratecolor" color="0xFF786E46"/>
 </mfgpreviewcolors>
 <errors>
-<approved hash="5,1,81afa49f7fce4b0d"/>
-<approved hash="5,1,7fa09a4436326014"/>
 <approved hash="5,1,4666e4431aef412b"/>
-<approved hash="5,1,14bfc9640054a5c8"/>
-<approved hash="5,1,7f7c82222e6c60f8"/>
-<approved hash="5,1,7fa37bce57b0e017"/>
-<approved hash="5,1,deda7f247854a1ed"/>
-<approved hash="5,1,81ac5d5f060ecb0e"/>
 <approved hash="5,1,ebd684c17a7ded25"/>
-<approved hash="5,1,7e6363bc4feae007"/>
-<approved hash="5,1,817b4c2d97644bf1"/>
-<approved hash="5,1,c57618e40154a581"/>
 <approved hash="5,1,ba65b0ed85a70084"/>
-<approved hash="5,1,8f124ea41954a1a5"/>
-<approved hash="5,1,81a7544b8f3a4b1d"/>
 <approved hash="5,1,364ba8d1410d5f1e"/>
-<approved hash="5,1,8064adb3f6e2cb0e"/>
-<approved hash="5,1,7fab9350bf06e007"/>
-<approved hash="5,1,81a4b5c1eeb8cb1e"/>
-<approved hash="5,1,7fa86a90c6c66004"/>
-<approved hash="5,16,6ef25e28262ec44c"/>
-<approved hash="5,16,22f212330035fa4c"/>
 <approved hash="5,16,a9df8c1775cc55f6"/>
-<approved hash="5,16,66e045f0c8dc294c"/>
-<approved hash="5,16,66e047f53fd9c44c"/>
-<approved hash="5,16,2ae00bee19c2fa4c"/>
-<approved hash="5,16,6ef25c2dd12b294c"/>
 <approved hash="4,1,5abf0a926e8d9ca0"/>
-<approved hash="4,1,72aba61e514f98ca"/>
-<approved hash="4,1,ec70429edd45d691"/>
 <approved hash="4,1,b05810cc30f6b3f5"/>
 <approved hash="4,1,48644749fe56ae78"/>
 <approved hash="4,1,dc60df0599316e04"/>
-<approved hash="4,1,0d8be01fd94d19ea"/>
-<approved hash="4,1,d30c009c5546dbee"/>
-<approved hash="4,16,23e8f482687c0d62"/>
-<approved hash="4,16,3bf02c81c84bbd7a"/>
 <approved hash="4,16,65d303ced2fabc9d"/>
 <approved hash="4,16,20e5d123b712b483"/>
 <approved hash="4,16,62d02eccb5a16a1c"/>
@@ -14987,20 +14962,48 @@ design rules under a new name.</description>
 <approved hash="19,16,c405c104b130b431"/>
 <approved hash="19,16,7408710b213f243c"/>
 <approved hash="19,16,c0f9c01cb028b0cd"/>
-<approved hash="4,1,5ceb4808d25303ef"/>
-<approved hash="4,1,e01bf0f9324a951f"/>
-<approved hash="4,1,6e0bcee8f2472a0e"/>
-<approved hash="4,16,5ceb4808d25303ef"/>
-<approved hash="4,16,e01bf0f9324a951f"/>
-<approved hash="5,1,81e3fae797a6a161"/>
-<approved hash="5,1,867c9f2f3e9e4c16"/>
-<approved hash="5,1,84738633a592cc09"/>
-<approved hash="5,1,806c4d2545850506"/>
-<approved hash="5,1,82635439de898519"/>
-<approved hash="5,1,a3f3a8ed7ebc3e71"/>
-<approved hash="5,1,81b4f3931ef22116"/>
-<approved hash="5,1,a3a4a199f7e8be06"/>
-<approved hash="4,1,7016c200df94f6c8"/>
+<approved hash="5,1,cd9a3ca2a9dc0d15"/>
+<approved hash="5,1,285e1c884ace31e1"/>
+<approved hash="5,1,b9a54acc399d170a"/>
+<approved hash="5,1,59c7fc1329c6c3eb"/>
+<approved hash="5,1,591314a9c158c31b"/>
+<approved hash="5,1,dacfdc0dd920ea03"/>
+<approved hash="5,1,b859528621c716e6"/>
+<approved hash="5,1,29a204c25294300d"/>
+<approved hash="5,1,ba6211247834a887"/>
+<approved hash="5,1,7187a7640034ad22"/>
+<approved hash="5,1,c91ca87b5a95e60c"/>
+<approved hash="5,1,c91458a7aa51e61c"/>
+<approved hash="5,1,a84ac61c40b21b05"/>
+<approved hash="5,1,eaaa20a41934a8cf"/>
+<approved hash="5,1,b991a262d113171e"/>
+<approved hash="5,1,591be475319cc30b"/>
+<approved hash="5,1,d6dcec076c398510"/>
+<approved hash="5,1,2996ec6cba1a3019"/>
+<approved hash="5,1,c9c0b01d42cfe6ec"/>
+<approved hash="5,1,bd4f36cb2216fc63"/>
+<approved hash="5,1,4d5ccac17d0fa973"/>
+<approved hash="5,1,3d89cea8f6c55605"/>
+<approved hash="5,1,a459f016f5ab7216"/>
+<approved hash="5,1,a04e76e40134ac6b"/>
+<approved hash="5,16,2aaeb33d325553c4"/>
+<approved hash="5,16,22acad142c7e53c4"/>
+<approved hash="5,16,6eace10a8160fec4"/>
+<approved hash="5,16,66aeff260c4e6dc4"/>
+<approved hash="5,16,66aeff239f4bfec4"/>
+<approved hash="5,16,6eace10f12656dc4"/>
+<approved hash="4,1,549bfdd1d92dc60a"/>
+<approved hash="4,1,5d971fe11fa64290"/>
+<approved hash="4,1,0e0b12ee4b245bca"/>
+<approved hash="4,1,24e3d801753c95d2"/>
+<approved hash="4,1,8316a7f3de29fec6"/>
+<approved hash="4,1,959afca3f7d6e48a"/>
+<approved hash="4,1,d49b70f05e0d000b"/>
+<approved hash="4,1,959871ddfcab2689"/>
+<approved hash="4,16,10b1a1582360d97f"/>
+<approved hash="4,16,f0b221743b47317c"/>
+<approved hash="4,16,24e3d801753c95d2"/>
+<approved hash="4,16,0e0b12ee4b245bca"/>
 </errors>
 </board>
 </drawing>
