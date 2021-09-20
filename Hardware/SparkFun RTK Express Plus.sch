@@ -26677,6 +26677,11 @@ voltages up to 5.5 V independent of VCC operating voltage.
 <part name="J1" library="SparkFun-Connectors" deviceset="CONN_02" device="1X02_NO_SILK"/>
 <part name="J16" library="SparkFun-Connectors" deviceset="MICRO-SD" device="-PUSH-PUSH-EXT-PIN"/>
 <part name="J15" library="SparkFun-Connectors" deviceset="CONN_02" device="1X02_NO_SILK"/>
+<part name="SUPPLY11" library="SparkFun-PowerSymbols" deviceset="3.3V" device=""/>
+<part name="R6" library="SparkFun-Resistors" deviceset="10KOHM" device="-0603-1/10W-1%" value="10k"/>
+<part name="R8" library="SparkFun-Resistors" deviceset="10KOHM" device="-0603-1/10W-1%" value="10k"/>
+<part name="SUPPLY40" library="SparkFun-PowerSymbols" deviceset="3.3V" device=""/>
+<part name="SUPPLY41" library="SparkFun-PowerSymbols" deviceset="3.3V" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -27201,6 +27206,9 @@ The connector has contacts on both top and bottom.</text>
 <attribute name="VALUE" x="73.66" y="119.634" size="1.778" layer="96" font="vector"/>
 <attribute name="NAME" x="73.66" y="130.048" size="1.778" layer="95" font="vector"/>
 </instance>
+<instance part="SUPPLY11" gate="G$1" x="322.58" y="104.14" smashed="yes">
+<attribute name="VALUE" x="322.58" y="106.934" size="1.778" layer="96" align="bottom-center"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -27313,6 +27321,11 @@ The connector has contacts on both top and bottom.</text>
 <wire x1="96.52" y1="218.44" x2="96.52" y2="226.06" width="0.1524" layer="91"/>
 <junction x="96.52" y="226.06"/>
 <pinref part="U11" gate="G$1" pin="V_USB"/>
+</segment>
+<segment>
+<pinref part="R34" gate="G$1" pin="2"/>
+<pinref part="SUPPLY11" gate="G$1" pin="3.3V"/>
+<wire x1="322.58" y1="104.14" x2="322.58" y2="101.6" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="GND" class="0">
@@ -28393,13 +28406,6 @@ The connector has contacts on both top and bottom.</text>
 <pinref part="U5" gate="U1" pin="IA35"/>
 </segment>
 </net>
-<net name="ESP_3V3" class="1">
-<segment>
-<pinref part="R34" gate="G$1" pin="2"/>
-<wire x1="322.58" y1="101.6" x2="322.58" y2="104.14" width="0.1524" layer="91"/>
-<label x="322.58" y="104.14" size="1.27" layer="95" rot="R90" xref="yes"/>
-</segment>
-</net>
 <net name="PPS_LV" class="0">
 <segment>
 <wire x1="167.64" y1="210.82" x2="172.72" y2="210.82" width="0.1524" layer="91"/>
@@ -28494,7 +28500,7 @@ The connector has contacts on both top and bottom.</text>
 <text x="60.96" y="190.5" size="1.27" layer="97" align="center">Maintains GNSS data/almanac</text>
 <wire x1="142.24" y1="177.8" x2="142.24" y2="279.4" width="0.2032" layer="97" style="longdash"/>
 <text x="198.12" y="266.7" size="2.54" layer="94" font="vector" align="center">Wheel Tick and Direction Signal</text>
-<text x="185.42" y="248.92" size="2.54" layer="97" font="vector" align="center">Schmitt Trigger Output</text>
+<text x="187.96" y="248.92" size="2.54" layer="97" font="vector" align="center">Schmitt Trigger Output</text>
 <text x="73.66" y="43.18" size="2.54" layer="97" font="vector" align="center">All input signals must be
 limited to 3.3V</text>
 <wire x1="261.62" y1="177.8" x2="261.62" y2="279.4" width="0.2032" layer="97" style="longdash"/>
@@ -28808,6 +28814,20 @@ limited to 3.3V</text>
 <instance part="U9" gate="U1" x="185.42" y="203.2" smashed="yes">
 <attribute name="NAME" x="175.26" y="211.582" size="1.778" layer="95"/>
 <attribute name="VALUE" x="175.26" y="193.04" size="1.778" layer="95"/>
+</instance>
+<instance part="R6" gate="G$1" x="165.1" y="210.82" smashed="yes" rot="R90">
+<attribute name="NAME" x="163.576" y="210.82" size="1.778" layer="95" font="vector" rot="R90" align="bottom-center"/>
+<attribute name="VALUE" x="166.624" y="210.82" size="1.778" layer="96" font="vector" rot="R90" align="top-center"/>
+</instance>
+<instance part="R8" gate="G$1" x="165.1" y="238.76" smashed="yes" rot="R90">
+<attribute name="NAME" x="163.576" y="238.76" size="1.778" layer="95" font="vector" rot="R90" align="bottom-center"/>
+<attribute name="VALUE" x="166.624" y="238.76" size="1.778" layer="96" font="vector" rot="R90" align="top-center"/>
+</instance>
+<instance part="SUPPLY40" gate="G$1" x="165.1" y="246.38" smashed="yes">
+<attribute name="VALUE" x="165.1" y="249.174" size="1.778" layer="96" align="bottom-center"/>
+</instance>
+<instance part="SUPPLY41" gate="G$1" x="165.1" y="218.44" smashed="yes">
+<attribute name="VALUE" x="165.1" y="221.234" size="1.778" layer="96" align="bottom-center"/>
 </instance>
 </instances>
 <busses>
@@ -29195,6 +29215,16 @@ limited to 3.3V</text>
 <wire x1="170.18" y1="210.82" x2="170.18" y2="208.28" width="0.1524" layer="91"/>
 <pinref part="U9" gate="U1" pin="VCC"/>
 </segment>
+<segment>
+<pinref part="R8" gate="G$1" pin="2"/>
+<pinref part="SUPPLY40" gate="G$1" pin="3.3V"/>
+<wire x1="165.1" y1="246.38" x2="165.1" y2="243.84" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="R6" gate="G$1" pin="2"/>
+<pinref part="SUPPLY41" gate="G$1" pin="3.3V"/>
+<wire x1="165.1" y1="218.44" x2="165.1" y2="215.9" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="ESP_26/DAC2" class="0">
 <segment>
@@ -29421,9 +29451,13 @@ limited to 3.3V</text>
 <label x="86.36" y="58.42" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
-<wire x1="172.72" y1="231.14" x2="170.18" y2="231.14" width="0.1524" layer="91"/>
-<label x="170.18" y="231.14" size="1.27" layer="95" font="vector" rot="R180" xref="yes"/>
+<wire x1="172.72" y1="231.14" x2="165.1" y2="231.14" width="0.1524" layer="91"/>
+<label x="160.02" y="231.14" size="1.27" layer="95" font="vector" rot="R180" xref="yes"/>
 <pinref part="U8" gate="U1" pin="A"/>
+<pinref part="R8" gate="G$1" pin="1"/>
+<wire x1="165.1" y1="231.14" x2="160.02" y2="231.14" width="0.1524" layer="91"/>
+<wire x1="165.1" y1="233.68" x2="165.1" y2="231.14" width="0.1524" layer="91"/>
+<junction x="165.1" y="231.14"/>
 </segment>
 </net>
 <net name="EXT_DIR" class="0">
@@ -29433,9 +29467,13 @@ limited to 3.3V</text>
 <label x="86.36" y="68.58" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
-<wire x1="172.72" y1="203.2" x2="170.18" y2="203.2" width="0.1524" layer="91"/>
-<label x="170.18" y="203.2" size="1.27" layer="95" font="vector" rot="R180" xref="yes"/>
+<wire x1="172.72" y1="203.2" x2="165.1" y2="203.2" width="0.1524" layer="91"/>
+<label x="160.02" y="203.2" size="1.27" layer="95" font="vector" rot="R180" xref="yes"/>
 <pinref part="U9" gate="U1" pin="A"/>
+<pinref part="R6" gate="G$1" pin="1"/>
+<wire x1="165.1" y1="203.2" x2="160.02" y2="203.2" width="0.1524" layer="91"/>
+<wire x1="165.1" y1="205.74" x2="165.1" y2="203.2" width="0.1524" layer="91"/>
+<junction x="165.1" y="203.2"/>
 </segment>
 </net>
 <net name="ZED_WT" class="0">

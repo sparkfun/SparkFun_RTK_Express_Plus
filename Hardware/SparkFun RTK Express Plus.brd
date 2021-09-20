@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.005" altunitdist="inch" altunit="inch"/>
+<grid distance="1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.1" altunitdist="mm" altunit="mm"/>
 <layers>
 <layer number="1" name="Top/Horz" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="GND/Horz" color="1" fill="3" visible="yes" active="yes"/>
@@ -10992,119 +10992,6 @@ except it is slightly longer and requires the keepout zone.</description>
 <vertex x="2.77" y="0.14"/>
 </polygon>
 </package>
-<package name="V100">
-<polygon width="0.01" layer="21">
-<vertex x="-1.09" y="0.41"/>
-<vertex x="-1.22" y="0.46"/>
-<vertex x="-1.34" y="0.42"/>
-<vertex x="-1.42" y="0.32"/>
-<vertex x="-1.73" y="-0.28"/>
-<vertex x="-1.79" y="-0.27"/>
-<vertex x="-2.09" y="0.33"/>
-<vertex x="-2.17" y="0.44"/>
-<vertex x="-2.29" y="0.46"/>
-<vertex x="-2.43" y="0.39"/>
-<vertex x="-2.52" y="0.29"/>
-<vertex x="-2.53" y="0.18"/>
-<vertex x="-2.46" y="0.06"/>
-<vertex x="-1.92" y="-0.87"/>
-<vertex x="-1.81" y="-0.94"/>
-<vertex x="-1.67" y="-0.94"/>
-<vertex x="-1.56" y="-0.86"/>
-<vertex x="-1.49" y="-0.74"/>
-<vertex x="-1.02" y="0.07"/>
-<vertex x="-0.96" y="0.2"/>
-<vertex x="-0.98" y="0.31"/>
-</polygon>
-<polygon width="0.01" layer="21">
-<vertex x="-0.02" y="0.89"/>
-<vertex x="-0.12" y="0.81"/>
-<vertex x="-0.42" y="0.54"/>
-<vertex x="-0.52" y="0.43"/>
-<vertex x="-0.55" y="0.33"/>
-<vertex x="-0.48" y="0.21"/>
-<vertex x="-0.37" y="0.11"/>
-<vertex x="-0.26" y="0.1"/>
-<vertex x="-0.13" y="0.17"/>
-<vertex x="-0.1" y="0.11"/>
-<vertex x="-0.1" y="-0.69"/>
-<vertex x="-0.09" y="-0.83"/>
-<vertex x="-0.03" y="-0.92"/>
-<vertex x="0.12" y="-0.95"/>
-<vertex x="0.28" y="-0.93"/>
-<vertex x="0.35" y="-0.84"/>
-<vertex x="0.36" y="-0.71"/>
-<vertex x="0.36" y="0.77"/>
-<vertex x="0.34" y="0.9"/>
-<vertex x="0.23" y="0.95"/>
-<vertex x="0.1" y="0.96"/>
-</polygon>
-<polygon width="0.01" layer="21">
-<vertex x="1.01" y="0.81"/>
-<vertex x="0.94" y="0.71"/>
-<vertex x="0.89" y="0.58"/>
-<vertex x="0.84" y="0.44"/>
-<vertex x="0.81" y="0.32"/>
-<vertex x="0.8" y="0.18"/>
-<vertex x="0.79" y="0.03"/>
-<vertex x="0.8" y="-0.12"/>
-<vertex x="0.81" y="-0.25"/>
-<vertex x="0.84" y="-0.38"/>
-<vertex x="0.88" y="-0.51"/>
-<vertex x="0.94" y="-0.63"/>
-<vertex x="1.01" y="-0.74"/>
-<vertex x="1.11" y="-0.82"/>
-<vertex x="1.23" y="-0.89"/>
-<vertex x="1.36" y="-0.93"/>
-<vertex x="1.49" y="-0.95"/>
-<vertex x="1.64" y="-0.94"/>
-<vertex x="1.77" y="-0.91"/>
-<vertex x="1.89" y="-0.85"/>
-<vertex x="1.99" y="-0.76"/>
-<vertex x="2.07" y="-0.66"/>
-<vertex x="2.13" y="-0.55"/>
-<vertex x="2.17" y="-0.44"/>
-<vertex x="2.21" y="-0.31"/>
-<vertex x="2.23" y="-0.17"/>
-<vertex x="2.24" y="-0.01"/>
-<vertex x="2.24" y="0.13"/>
-<vertex x="2.23" y="0.27"/>
-<vertex x="2.2" y="0.4"/>
-<vertex x="1.76" y="0.31"/>
-<vertex x="1.78" y="0.13"/>
-<vertex x="1.78" y="-0.07"/>
-<vertex x="1.76" y="-0.24"/>
-<vertex x="1.71" y="-0.37"/>
-<vertex x="1.64" y="-0.45"/>
-<vertex x="1.55" y="-0.49"/>
-<vertex x="1.51" y="-0.49"/>
-<vertex x="1.41" y="-0.46"/>
-<vertex x="1.34" y="-0.4"/>
-<vertex x="1.29" y="-0.28"/>
-<vertex x="1.26" y="-0.12"/>
-<vertex x="1.25" y="0.08"/>
-<vertex x="1.27" y="0.27"/>
-<vertex x="1.31" y="0.41"/>
-<vertex x="1.37" y="0.51"/>
-<vertex x="1.45" y="0.56"/>
-<vertex x="1.56" y="0.57"/>
-<vertex x="1.65" y="0.53"/>
-<vertex x="1.71" y="0.44"/>
-<vertex x="1.76" y="0.31"/>
-<vertex x="2.2" y="0.4"/>
-<vertex x="2.16" y="0.53"/>
-<vertex x="2.11" y="0.66"/>
-<vertex x="2.04" y="0.78"/>
-<vertex x="1.95" y="0.87"/>
-<vertex x="1.84" y="0.95"/>
-<vertex x="1.72" y="1"/>
-<vertex x="1.58" y="1.03"/>
-<vertex x="1.43" y="1.03"/>
-<vertex x="1.3" y="1"/>
-<vertex x="1.18" y="0.95"/>
-<vertex x="1.06" y="0.88"/>
-</polygon>
-</package>
 <package name="EXPRESS_PLUS0">
 <polygon width="0.01" layer="21">
 <vertex x="-11" y="-0.61"/>
@@ -11572,6 +11459,77 @@ except it is slightly longer and requires the keepout zone.</description>
 <vertex x="10.04" y="-0.57"/>
 <vertex x="9.92" y="-0.72"/>
 <vertex x="9.87" y="-0.86"/>
+</polygon>
+</package>
+<package name="V110">
+<polygon width="0.01" layer="21">
+<vertex x="-0.82" y="0.41"/>
+<vertex x="-0.95" y="0.46"/>
+<vertex x="-1.07" y="0.42"/>
+<vertex x="-1.15" y="0.32"/>
+<vertex x="-1.46" y="-0.28"/>
+<vertex x="-1.52" y="-0.27"/>
+<vertex x="-1.82" y="0.33"/>
+<vertex x="-1.9" y="0.44"/>
+<vertex x="-2.02" y="0.46"/>
+<vertex x="-2.16" y="0.39"/>
+<vertex x="-2.25" y="0.29"/>
+<vertex x="-2.26" y="0.18"/>
+<vertex x="-2.19" y="0.06"/>
+<vertex x="-1.65" y="-0.87"/>
+<vertex x="-1.54" y="-0.94"/>
+<vertex x="-1.4" y="-0.94"/>
+<vertex x="-1.29" y="-0.86"/>
+<vertex x="-1.22" y="-0.74"/>
+<vertex x="-0.75" y="0.07"/>
+<vertex x="-0.69" y="0.2"/>
+<vertex x="-0.71" y="0.31"/>
+</polygon>
+<polygon width="0.01" layer="21">
+<vertex x="0.25" y="0.89"/>
+<vertex x="0.15" y="0.81"/>
+<vertex x="-0.15" y="0.54"/>
+<vertex x="-0.25" y="0.43"/>
+<vertex x="-0.27" y="0.33"/>
+<vertex x="-0.21" y="0.21"/>
+<vertex x="-0.1" y="0.11"/>
+<vertex x="0.01" y="0.1"/>
+<vertex x="0.14" y="0.17"/>
+<vertex x="0.17" y="0.11"/>
+<vertex x="0.17" y="-0.69"/>
+<vertex x="0.18" y="-0.83"/>
+<vertex x="0.24" y="-0.92"/>
+<vertex x="0.39" y="-0.95"/>
+<vertex x="0.55" y="-0.93"/>
+<vertex x="0.62" y="-0.84"/>
+<vertex x="0.63" y="-0.71"/>
+<vertex x="0.63" y="0.77"/>
+<vertex x="0.62" y="0.9"/>
+<vertex x="0.51" y="0.95"/>
+<vertex x="0.37" y="0.96"/>
+</polygon>
+<polygon width="0.01" layer="21">
+<vertex x="1.56" y="0.89"/>
+<vertex x="1.46" y="0.81"/>
+<vertex x="1.17" y="0.54"/>
+<vertex x="1.06" y="0.43"/>
+<vertex x="1.04" y="0.33"/>
+<vertex x="1.1" y="0.21"/>
+<vertex x="1.22" y="0.11"/>
+<vertex x="1.32" y="0.1"/>
+<vertex x="1.45" y="0.17"/>
+<vertex x="1.48" y="0.11"/>
+<vertex x="1.48" y="-0.69"/>
+<vertex x="1.49" y="-0.83"/>
+<vertex x="1.56" y="-0.92"/>
+<vertex x="1.71" y="-0.95"/>
+<vertex x="1.87" y="-0.93"/>
+<vertex x="1.94" y="-0.84"/>
+<vertex x="1.94" y="-0.71"/>
+<vertex x="1.94" y="0.77"/>
+<vertex x="1.93" y="0.9"/>
+<vertex x="1.82" y="0.95"/>
+<vertex x="1.68" y="0.96"/>
 </polygon>
 </package>
 </packages>
@@ -12841,8 +12799,6 @@ design rules under a new name.</description>
 <attribute name="PROD_ID" value="RES-15081" x="50" y="30" size="1.778" layer="27" font="vector" ratio="15" rot="R270" display="off"/>
 <attribute name="VALUE" x="48.222" y="31.651" size="0.6096" layer="27" ratio="20" rot="R270"/>
 </element>
-<element name="U$20" library="output" package="V100" value="" x="35" y="97" smashed="yes"/>
-<element name="U$21" library="output" package="V100" value="" x="35" y="47" smashed="yes" rot="MR0"/>
 <element name="J1" library="SparkFun-Connectors" package="1X02_NO_SILK" value="" x="58" y="24" smashed="yes" rot="R90">
 <attribute name="NAME" x="56.603" y="22.73" size="0.6096" layer="25" font="vector" ratio="20" rot="R90"/>
 <attribute name="VALUE" x="60.032" y="22.73" size="0.6096" layer="27" font="vector" ratio="20" rot="R90"/>
@@ -12854,6 +12810,18 @@ design rules under a new name.</description>
 <attribute name="PROD_ID" value="CONN-16110" x="54.6" y="3" size="1.778" layer="28" font="vector" ratio="15" rot="MR0" display="off"/>
 <attribute name="VALUE" x="54.6" y="3" size="0.5" layer="28" rot="MR0" align="center"/>
 </element>
+<element name="R6" library="SparkFun-Resistors" package="0603" value="10k" x="58" y="33" smashed="yes">
+<attribute name="NAME" x="58" y="33.762" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center"/>
+<attribute name="PROD_ID" value="RES-00824" x="58" y="33" size="1.778" layer="27" font="vector" ratio="15" display="off"/>
+<attribute name="VALUE" x="58" y="32.238" size="0.6096" layer="27" font="vector" ratio="20" align="top-center"/>
+</element>
+<element name="R8" library="SparkFun-Resistors" package="0603" value="10k" x="58" y="29" smashed="yes">
+<attribute name="NAME" x="58" y="29.762" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center"/>
+<attribute name="PROD_ID" value="RES-00824" x="58" y="29" size="1.778" layer="27" font="vector" ratio="15" display="off"/>
+<attribute name="VALUE" x="58" y="28.238" size="0.6096" layer="27" font="vector" ratio="20" align="top-center"/>
+</element>
+<element name="U$1" library="output" package="V110" value="" x="35" y="97" smashed="yes"/>
+<element name="U$18" library="output" package="V110" value="" x="35" y="47" smashed="yes" rot="MR0"/>
 </elements>
 <signals>
 <signal name="3.3V" class="1">
@@ -12924,7 +12892,8 @@ design rules under a new name.</description>
 <via x="54.07" y="38.735" extent="1-16" drill="0.3048"/>
 <wire x1="54.07" y1="38.735" x2="36.55144375" y2="38.735" width="0.5588" layer="2"/>
 <wire x1="36.55144375" y1="38.735" x2="34.993221875" y2="40.293221875" width="0.5588" layer="2"/>
-<wire x1="52.995" y1="76.534" x2="52.995" y2="91.31" width="0.5588" layer="16"/>
+<wire x1="52.995" y1="76.534" x2="52.995" y2="80.01" width="0.5588" layer="16"/>
+<wire x1="52.995" y1="80.01" x2="52.995" y2="91.31" width="0.5588" layer="16"/>
 <wire x1="47.85" y1="90" x2="47.85" y2="91.31" width="0.5588" layer="16"/>
 <wire x1="30.555" y1="56.8" x2="28.05" y2="56.8" width="0.3048" layer="1"/>
 <wire x1="28.05" y1="56.8" x2="28" y2="56.85" width="0.3048" layer="1"/>
@@ -13026,6 +12995,17 @@ design rules under a new name.</description>
 <wire x1="22.0232" y1="54.1542" x2="22.85" y2="54.981" width="0.1778" layer="1"/>
 <wire x1="23.993" y1="55.997" x2="23.99" y2="56" width="0.1778" layer="1"/>
 <wire x1="23.99" y1="56" x2="22.85" y2="56" width="0.3048" layer="1"/>
+<contactref element="R34" pad="2"/>
+<wire x1="47.84" y1="80.01" x2="52.995" y2="80.01" width="0.1778" layer="16"/>
+<contactref element="R8" pad="2"/>
+<contactref element="R6" pad="2"/>
+<wire x1="58.85" y1="33" x2="58.85" y2="30.55" width="0.1778" layer="1"/>
+<wire x1="58.85" y1="30.55" x2="58.9" y2="30.5" width="0.1778" layer="1"/>
+<wire x1="58.9" y1="30.5" x2="58.85" y2="30.45" width="0.1778" layer="1"/>
+<wire x1="58.85" y1="30.45" x2="58.85" y2="29" width="0.1778" layer="1"/>
+<wire x1="58.9" y1="30.5" x2="54.0446" y2="30.5" width="0.1778" layer="16"/>
+<wire x1="54.0246" y1="30.48" x2="54.0446" y2="30.5" width="0.1778" layer="16"/>
+<via x="58.9" y="30.5" extent="1-16" drill="0.3048"/>
 </signal>
 <signal name="GND" airwireshidden="yes">
 <contactref element="C1" pad="2"/>
@@ -14853,9 +14833,6 @@ design rules under a new name.</description>
 <wire x1="41.656" y1="93.726" x2="41.74" y2="93.81" width="0.1778" layer="16"/>
 <wire x1="41.74" y1="93.81" x2="43.238" y2="93.81" width="0.1778" layer="16"/>
 </signal>
-<signal name="ESP_3V3" class="1">
-<contactref element="R34" pad="2"/>
-</signal>
 <signal name="EXT_WT">
 <contactref element="U1" pad="2"/>
 <via x="31.75" y="52.4031" extent="1-16" drill="0.3048"/>
@@ -14863,10 +14840,16 @@ design rules under a new name.</description>
 <wire x1="31.825" y1="52.3281" x2="31.75" y2="52.4031" width="0.1778" layer="1"/>
 <wire x1="31.75" y1="52.4031" x2="56.4769" y2="52.4031" width="0.1778" layer="2"/>
 <contactref element="U8" pad="P2"/>
-<wire x1="54.381" y1="25.992" x2="55.329" y2="25.992" width="0.1778" layer="1"/>
-<wire x1="56.4769" y1="27.1399" x2="56.4769" y2="52.4031" width="0.1778" layer="1"/>
 <via x="56.4769" y="52.4031" extent="1-16" drill="0.3048"/>
-<wire x1="55.329" y1="25.992" x2="56.4769" y2="27.1399" width="0.1778" layer="1"/>
+<contactref element="R8" pad="1"/>
+<wire x1="54.381" y1="25.992" x2="55.075" y2="25.992" width="0.1778" layer="1"/>
+<wire x1="57.15" y1="28.067" x2="57.15" y2="29" width="0.1778" layer="1"/>
+<wire x1="55.075" y1="25.992" x2="57.15" y2="28.067" width="0.1778" layer="1"/>
+<wire x1="58" y1="31.65" x2="57.15" y2="30.8" width="0.1778" layer="1"/>
+<wire x1="57.15" y1="29" x2="57.15" y2="30.8" width="0.1778" layer="1"/>
+<wire x1="56.4769" y1="35.2231" x2="56.4769" y2="52.4031" width="0.1778" layer="1"/>
+<wire x1="58" y1="31.65" x2="58" y2="33.7" width="0.1778" layer="1"/>
+<wire x1="58" y1="33.7" x2="56.4769" y2="35.2231" width="0.1778" layer="1"/>
 </signal>
 <signal name="EXT_DIR">
 <contactref element="U1" pad="15"/>
@@ -14876,10 +14859,13 @@ design rules under a new name.</description>
 <wire x1="31.825" y1="56.8" x2="31.825" y2="62.559" width="0.1778" layer="1"/>
 <wire x1="31.825" y1="62.559" x2="31.877" y2="62.611" width="0.1778" layer="1"/>
 <contactref element="U9" pad="P2"/>
-<wire x1="54.381" y1="31.992" x2="55.614" y2="31.992" width="0.1778" layer="1"/>
-<wire x1="55.614" y1="31.992" x2="55.88" y2="32.258" width="0.1778" layer="1"/>
 <via x="55.88" y="62.738" extent="1-16" drill="0.3048"/>
-<wire x1="55.88" y1="62.738" x2="55.88" y2="32.258" width="0.1778" layer="1"/>
+<contactref element="R6" pad="1"/>
+<wire x1="54.381" y1="31.992" x2="55.3" y2="31.992" width="0.1778" layer="1"/>
+<wire x1="55.88" y1="32.572" x2="55.3" y2="31.992" width="0.1778" layer="1"/>
+<wire x1="55.88" y1="62.738" x2="55.88" y2="33" width="0.1778" layer="1"/>
+<wire x1="55.88" y1="33" x2="55.88" y2="32.572" width="0.1778" layer="1"/>
+<wire x1="57.15" y1="33" x2="55.88" y2="33" width="0.1778" layer="1"/>
 </signal>
 <signal name="ZED_WT">
 <contactref element="U8" pad="P4"/>
