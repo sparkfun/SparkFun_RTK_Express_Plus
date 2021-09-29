@@ -1,4 +1,4 @@
-SparkFun RTK Express
+SparkFun RTK Express Plus
 ===========================================================
 
 [![SparkFun RTK Express Plus](https://cdn.sparkfun.com//assets/parts/1/8/0/7/5/18590-SparkFun_RTK_Express_Plus-04.jpg)](https://www.sparkfun.com/products/18590)
