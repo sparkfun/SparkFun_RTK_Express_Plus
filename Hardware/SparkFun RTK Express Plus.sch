@@ -26686,9 +26686,9 @@ voltages up to 5.5 V independent of VCC operating voltage.
 <sheets>
 <sheet>
 <plain>
-<text x="420.624" y="7.366" size="2.54" layer="94">v10</text>
+<text x="420.624" y="7.366" size="2.54" layer="94">v11</text>
 <text x="154.94" y="190.5" size="1.778" layer="97" align="center">7-bit unshifted I2C address: 0x42</text>
-<text x="150.622" y="264.922" size="2.54" layer="94" rot="MR180" align="center">u-blox ZED-F9P</text>
+<text x="150.622" y="264.922" size="2.54" layer="94" rot="MR180" align="center">u-blox ZED-F9R</text>
 <text x="47.752" y="243.84" size="1.778" layer="97">LQW15ANR12J00D</text>
 <text x="66.04" y="266.7" size="1.27" layer="97">Board thickness: 1.6mm</text>
 <text x="66.04" y="261.62" size="1.27" layer="97">Er: 4.6</text>
@@ -28504,6 +28504,7 @@ The connector has contacts on both top and bottom.</text>
 <text x="73.66" y="43.18" size="2.54" layer="97" font="vector" align="center">All input signals must be
 limited to 3.3V</text>
 <wire x1="261.62" y1="177.8" x2="261.62" y2="279.4" width="0.2032" layer="97" style="longdash"/>
+<text x="423.164" y="7.366" size="2.54" layer="94">v11</text>
 </plain>
 <instances>
 <instance part="R7" gate="G$1" x="68.58" y="124.46" smashed="yes" rot="MR90">
@@ -28714,7 +28715,6 @@ limited to 3.3V</text>
 <attribute name="LAST_DATE_TIME" x="342.9" y="1.27" size="2.54" layer="94" font="vector"/>
 <attribute name="SHEET" x="416.56" y="1.27" size="2.54" layer="94" font="vector"/>
 <attribute name="DRAWING_NAME" x="345.694" y="17.78" size="2.7432" layer="94" font="vector"/>
-<attribute name="REV" x="419.1" y="6.604" size="2.7432" layer="94" font="vector"/>
 <attribute name="DESIGNER" x="353.314" y="11.176" size="2.7432" layer="94" font="vector"/>
 </instance>
 <instance part="C4" gate="G$1" x="76.2" y="248.92" smashed="yes">
